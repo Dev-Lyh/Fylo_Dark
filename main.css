@@ -21,3 +21,14 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
+button{
+    background: var(--Gradient);
+    height: 45px;
+    width: 240px;
+    border: none;
+    color: var(--White);
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 50px;
+}

@@ -60,6 +60,7 @@ header{
 .tlt-s p{
     width: 480px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
     color: var(--White);
     font-size: 16px;
     margin: 20px 0;
@@ -68,12 +69,12 @@ header{
     margin: 20px 0;
 }
 .grid-s{
-    margin-top: 100px;
-    background-color: var(--MainBG);
+    margin-top: 80px;
 }
 .g-g-s{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: var(--MainBG);
 }
 .blocks{
     text-align:center;
@@ -97,4 +98,68 @@ header{
 }
 .four-p{
     padding: 0 150px;
+}
+.prod-s{
+    padding: 100px 0;
+}
+.p-g{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+.txt-prod{
+    color: var(--White);
+    padding-left: 60px;
+}
+.txt-prod h1{
+    font-size: 34px;
+    width: 300px;
+}
+.txt-prod p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 25px 0;
+}
+.txt-prod a{
+    display: flex;
+    align-items: center;
+    color: var(--Cyan);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    width: fit-content;
+    box-shadow: 0px 2px 0px 0px var(--Cyan);
+    padding: 2px;
+}
+.txt-prod a img{
+    margin-left: 5px;
+}
+.g-clt{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+.clt::before{
+    content: url(./images/bg-quotes.png);
+    position: absolute;
+    z-index: -1;
+    left: 70px;
+    top: 2215px;
+}
+.cmmt{
+    width: 350px;
+    height: 200px;
+    background-color: var(--TestimonialsBG);
+    border-radius: 10px;
+}
+
+
+@media screen and (max-height: 768px) {
+    .clt::before{
+        content: url(./images/bg-quotes.png);
+        position: absolute;
+        z-index: -1;
+        left: 70px;
+        top: 2240px;
+    }
 }

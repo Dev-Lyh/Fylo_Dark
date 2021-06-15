@@ -20,6 +20,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    background-color: var(--MainBG);
 }
 button{
     background: var(--Gradient);

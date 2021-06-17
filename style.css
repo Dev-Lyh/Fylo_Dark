@@ -181,7 +181,7 @@ footer{
     height: 400px;
     background-color: var(--FooterBG);
 }
-.card::before{
+.card{
     content: '';
     background-color: var(--IntroEmailBG);
     position: absolute;
@@ -201,7 +201,7 @@ footer{
         left: 70px;
         top: 2340px;
     }
-    .card::before{
+    .card{
         content: '';
         position: absolute;
         z-index: 2;

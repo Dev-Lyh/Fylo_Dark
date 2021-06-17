@@ -192,7 +192,18 @@ footer{
     left: 22%;
     box-shadow: 5px 5px 16px 0px #0000008a;
     border-radius: 10px;
+    text-align: center;
+    color: var(--White);
+    padding: 20px 0;
 }
+.card h1{
+    margin: 10px 0;
+}
+.card p{
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
 @media screen and (max-height: 768px) {
     .clt::before{
         content: url(./images/bg-quotes.png);

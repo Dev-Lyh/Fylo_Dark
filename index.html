@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/layers-icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Fylo Dark | FrontEnd Mentor</title>
 </head>
 <body>
@@ -175,7 +176,30 @@
             <p>
                 It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
             </p>
+            <form id="emailLocal">
+                <input type="email" name="mailplace" id="mailPlace">
+                <button type="submit" id="mailbtn">
+            </form>
         </div>
     </footer>
+    <script>
+        $("#emailLocal").validate({
+            rules: {
+                mailPlace: {
+                    required: true
+                }
+            },
+            messages: {
+                mailPlace: {
+                    required: "* Campo obrigatório"
+                }
+            }
+        });
+        $("#mailbtn").on("click", function (e){
+            if (!$("#emailLocal").valid()){
+                e.preventDefault();
+            }
+        })
+    </script>
 </body>
 </html>
